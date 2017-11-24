@@ -32,6 +32,10 @@ public class PersonaAction extends ActionSupport {
 		this.gender = gender;
 	}
 
+	public String execute(){
+		personas = PersistentManager.getInstance();
+		return SUCCESS;
+	}
 	
 	public String save(){
 		personas = PersistentManager.getInstance();
@@ -54,5 +58,5 @@ public class PersonaAction extends ActionSupport {
 		setAge(null);
 		setGender(null);
 		return SUCCESS;
-		}
+	}
 }
