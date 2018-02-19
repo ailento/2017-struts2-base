@@ -13,6 +13,14 @@ public class PersonaAction extends ActionSupport {
 	private String age;
 	private String gender;
 	private List<Persona> personas;
+	public List<Persona> getPersonas() {
+		return personas;
+	}
+
+	public void setPersonas(List<Persona> personas) {
+		this.personas = personas;
+	}
+
 	public String execute(){
 		personas = PersistentManager.getInstance();
 		return SUCCESS;
