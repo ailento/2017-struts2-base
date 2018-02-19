@@ -8,6 +8,7 @@
 <body>
 
 	<h1>Personas</h1>
+	
     <s:form action="save">
         <s:textfield label="Nombre" name="name"></s:textfield>
         <s:textfield label="Edad" name="age"></s:textfield>
@@ -15,6 +16,7 @@
         <s:submit></s:submit>
         <s:actionerror/>
     </s:form>
+    
 	    <table>
 			<tr>
 			<th>ID</th>
@@ -30,7 +32,11 @@
 			<td><s:property value="#p.gender"/></td>
 			</tr>
 			</s:iterator>
-		</table>
-
+		</table>		
+		
+	<s:form action="personas"/>
+	<s:form result="success"/>
+        
+	
 </body>
 </html>

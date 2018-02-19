@@ -13,25 +13,6 @@ public class PersonaAction extends ActionSupport {
 	private String age;
 	private String gender;
 	private List<Persona> personas;
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getAge() {
-		return age;
-	}
-	public void setAge(String age) {
-		this.age = age;
-	}
-	public String getGender() {
-		return gender;
-	}
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
 	public String execute(){
 		personas = PersistentManager.getInstance();
 		return SUCCESS;
@@ -57,6 +38,27 @@ public class PersonaAction extends ActionSupport {
 		setName(null);
 		setAge(null);
 		setGender(null);
+	
 		return SUCCESS;
 	}
-}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+
+	}
